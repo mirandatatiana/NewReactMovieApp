@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+ 
+  justify-content: space-around;
+  flex-direction: row;
+}
+* {
+  font-family: 'Bebas Neue', sans-serif;
+  
+}
+.card-media {
+  border-radius: 20px;
+}
+.cardaction{
+  padding: none;
+  border-radius: 20px;
+
+}
+.details-carding {
+  border-radius: 20px;
+}
+
+
+.pagination{
+  margin: 20px;
+
+}
+.MuiPagination-ul { 
+  justify-content: center;
+  
+ }
+
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+
+@media (min-width: 576px) {
+  nav {
+    align-items: center;
+
+  }
+
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
