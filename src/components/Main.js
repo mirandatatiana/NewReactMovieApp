@@ -18,12 +18,11 @@ const Main = () => {
                 <ListMoviesTopRated title="Top Rated Movies" />
             </div>
             <div className="">
-                <ListMoviesUpComing title="Now Playing Movies"/>
+                <ListMoviesUpComing title="Now Playing Movies" />
             </div>
             <div className="">
                 <Footer title="" />
             </div>
-
         </div>
     )
 }

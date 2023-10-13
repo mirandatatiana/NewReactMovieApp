@@ -3,15 +3,16 @@ import { useState, useRef, useEffect } from 'react';
 const Carousel = () => {
 
   const [movies, setMovies] = useState([])
-    useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=41514cf9c5004dbe47144dbf1928e39c")
-            .then(res => res.json())
-            .then(data => setMovies(data.results))
-    }, [])  
+  useEffect(() => {
+    fetch("https://api.themoviedb.org/3/movie/popular?api_key=41514cf9c5004dbe47144dbf1928e39c")
+      .then(res => res.json())
+      .then(data => setMovies(data.results))
+  }, [])
   const maxScrollWidth = useRef(0);
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
-  
+
+//Configuration of the next and previous arrows 
   const movePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prevState) => prevState - 1);
@@ -25,20 +26,6 @@ const Carousel = () => {
     ) {
       setCurrentIndex((prevState) => prevState + 1);
     }
-  };
-
-  const isDisabled = (direction) => {
-    if (direction === 'prev') {
-      return currentIndex <= 0;
-    }
-
-    if (direction === 'next' && carousel.current !== null) {
-      return (
-        carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
-      );
-    }
-
-    return false;
   };
 
   useEffect(() => {
@@ -69,7 +56,7 @@ const Carousel = () => {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
             <span className="sr-only">Prev</span>
           </button>
@@ -85,32 +72,32 @@ const Carousel = () => {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
             <span className="sr-only">Next</span>
           </button>
         </div>
         <div ref={carousel} className="carousel-container animate-scroll relative flex overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0" >
-       
           {movies.map((movie, index) => {
             return (
               <div key={index} className="carousel-item text-center h-screen relative w-50 h-80  snap-start">
                 <a
-                   img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
+                  href={movie.id}
+                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-5 bg-white z-10 rounded-lg"
+                > </a>
+                <button img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
                   className="h-full w-full aspect-[2/3] block bg-cover bg-center bg-no-repeat z-0 rounded-lg"
-                  
-                  style={ {backgroundImage: "url(\"https://image.tmdb.org/t/p/original" + movie.poster_path + "\")"} }                 >
+                  style={{ backgroundImage: "url(\"https://image.tmdb.org/t/p/original" + movie.poster_path + "\")" }}                 >
                   <img
                     src={movie.id}
                     alt={movie.title}
                     img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-                    
                     className="w-full h-full hidden"
                   />
-                </a>
+                </button>
                 <a
-                    href={movie.id}
-                    className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-5 bg-white z-10 rounded-lg"
+                  href={movie.id}
+                  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-5 bg-white z-10 rounded-lg"
                 >
                   <h3 className="text-white py-6 px-3 mx-auto text-xl">
                     {movie.title}
@@ -119,7 +106,6 @@ const Carousel = () => {
               </div>
             );
           })}
-
         </div>
       </div>
     </div>

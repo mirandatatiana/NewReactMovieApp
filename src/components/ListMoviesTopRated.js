@@ -11,6 +11,7 @@ const ListMoviesTopRated = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
   
+  //Configuration of the next and previous arrows 
   const movePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prevState) => prevState - 1);
@@ -24,20 +25,6 @@ const ListMoviesTopRated = () => {
     ) {
       setCurrentIndex((prevState) => prevState + 1);
     }
-  };
-
-  const isDisabled = (direction) => {
-    if (direction === 'prev') {
-      return currentIndex <= 0;
-    }
-
-    if (direction === 'next' && carousel.current !== null) {
-      return (
-        carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
-      );
-    }
-
-    return false;
   };
 
   useEffect(() => {
@@ -104,26 +91,30 @@ const ListMoviesTopRated = () => {
             return (
               <div key={index} className="carousel-item text-center relative w-80 h-80 snap-start  ">
                 <a
+                    href={movie.id}
+                    className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-10 bg-white z-10 rounded-lg"
+                > </a>
+                <button
                    img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
                   className="h-full w-full aspect-[2/3] block bg-cover bg-no-repeat z-0 rounded-lg"
                   
                   style={ {backgroundImage: "url(\"https://image.tmdb.org/t/p/original" + movie.poster_path + "\")"} }                 >
-                  <img
+                  <img arial
                     src={movie.id}
-                    alt={movie.title}
+                    alt={`Poster Movie ${movie.title}`} 
                     img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
                     
                     className="w-full h-full hidden"
                   />
-                </a>
-                <a
+                </button>
+                {/* <a
                     href={movie.id}
                     className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-10 bg-white z-10 rounded-lg"
                 >
                   <h3 className="text-white py-6 px-3 mx-auto text-xl">
                     {movie.title}
                   </h3>
-                </a>
+                </a> */}
               </div>
             );
           })}

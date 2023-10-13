@@ -12,7 +12,7 @@ const Navbar = () => {
         { id: 4, text: 'POPULAR', to: '/popular' },
     ]
 
-    //handle click 
+    //Handle click 
     const handleClick = () => {
         setMobileNav(!mobileNav)
     }
@@ -24,8 +24,7 @@ const Navbar = () => {
                 <div className="flex items-center space-x-2 flex-grow">
                     <h1 className="text-2xl font-semibold text-white select-none">ReactTailwind</h1>
                 </div>
-                {/* menu s */}
-
+                {/* menu */}
                 <div className="hidden md:flex lg:flex space-x-3">
                     <ul className="flex items-center space-x-4">
                         {menu.map(item => (
@@ -37,13 +36,11 @@ const Navbar = () => {
                         ))}
                     </ul>
                 </div>
-
                 {/* menu icon  */}
                 <div className="block md:hidden lg:hidden">
                     <HiMenuAlt3 className="w-10 h-10 ring-blue-300 text-white border focus:ring-4 cursor-pointer rounded-lg p-2 transform transition duration-200 hover:scale-110" onClick={handleClick} />
                 </div>
             </nav>
-
             {/* mobile nav  */}
             {mobileNav && (
                 <Fade>
@@ -57,17 +54,12 @@ const Navbar = () => {
                                 </a>
                             ))}
                         </ul>
-
-                        {/* button  */}
-
                     </nav>
                 </Fade>
             )}
         </header>
     )
 }
-
-
 export default Navbar
 
 

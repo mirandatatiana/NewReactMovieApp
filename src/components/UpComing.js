@@ -6,7 +6,7 @@ import NavBar from "./NavBar"
 import Footer from "./Footer"
 
 //Function fot Top Rated
-const TopRated = () => {
+const Upcoming = () => {
     const [movies, setMovies] = useState([])
     const [totalPages, setTotalPages] = useState(1)
     const [page, setPage] = useState(1);
@@ -23,9 +23,9 @@ const TopRated = () => {
     }, [page])
 
     return (
-        <div className="toprated bg-gradient-to-r from-violet-900 to-fuchsia-800">
+        <div className="bg-gradient-to-r from-violet-900 to-fuchsia-800">
             <NavBar />
-            <div className="popular  bg-gradient-to-r from-violet-900 to-fuchsia-800">
+            <div className="cards  bg-gradient-to-r from-violet-900 to-fuchsia-800">
                 {movies.map(movie => (
                     <CardItem key={movie.id}
                         title={movie.title}
@@ -47,5 +47,4 @@ const TopRated = () => {
         </div>
     )
 }
-
-export default TopRated
+export default Upcoming

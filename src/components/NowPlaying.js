@@ -23,9 +23,9 @@ const NowPlaying = () => {
     }, [page])
 
     return (
-        <div className="toprated bg-gradient-to-r from-violet-900 to-fuchsia-800">
+        <div className="bg-gradient-to-r from-violet-900 to-fuchsia-800">
             <NavBar />
-            <div className="popular bg-gradient-to-r from-violet-900 to-fuchsia-800">
+            <div className="cards bg-gradient-to-r from-violet-900 to-fuchsia-800">
                 {movies.map(movie => (
                     <CardItem key={movie.id}
                         title={movie.title}
@@ -33,19 +33,18 @@ const NowPlaying = () => {
                         link={`/${movie.id}`} />
                 ))}
             </div>
-         <div className="pagination bg-gradient-to-r from-violet-900 to-fuchsia-800">
-            <Pagination
-            variant="outlined"
-                color="secondary"
-         size="large"
-                count={totalPages > 500 ? 500 : totalPages}
-                page={page}
-                onChange={handleChange}
-            />
+            <div className="pagination bg-gradient-to-r from-violet-900 to-fuchsia-800">
+                <Pagination
+                    variant="outlined"
+                    color="secondary"
+                    size="large"
+                    count={totalPages > 500 ? 500 : totalPages}
+                    page={page}
+                    onChange={handleChange}
+                />
             </div>
-           <Footer/>
+            <Footer />
         </div>
     )
 }
-
 export default NowPlaying
