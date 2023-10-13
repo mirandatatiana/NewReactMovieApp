@@ -97,32 +97,20 @@ const ListMoviesTopRated = () => {
                 <button
                    img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
                   className="h-full w-full aspect-[2/3] block bg-cover bg-no-repeat z-0 rounded-lg"
-                  
                   style={ {backgroundImage: "url(\"https://image.tmdb.org/t/p/original" + movie.poster_path + "\")"} }                 >
                   <img arial
                     src={movie.id}
                     alt={`Poster Movie ${movie.title}`} 
                     img={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}
-                    
                     className="w-full h-full hidden"
                   />
                 </button>
-                {/* <a
-                    href={movie.id}
-                    className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-10 bg-white z-10 rounded-lg"
-                >
-                  <h3 className="text-white py-6 px-3 mx-auto text-xl">
-                    {movie.title}
-                  </h3>
-                </a> */}
               </div>
             );
           })}
-
         </div>
       </div>
     </div>
   );
 };
-
 export default ListMoviesTopRated;
