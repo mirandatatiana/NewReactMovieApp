@@ -1,57 +1,16 @@
-<a name="readme-top"></a>
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+🚀 **Movie Page Project**
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/mirandatatiana/NewReactMovieApp">
-  </a>
+Welcome to the Movie Page project on GitHub! 🌌
 
-  <h3 align="center">New React Movie App</h3>
+![1E996D81-3BBE-421E-94E5-9503B640F03A](https://github.com/mirandatatiana/NewReactMovieApp/assets/76907106/edec6ce7-a452-4f7b-b017-830b545c3fcf)
+![1DFE0E4F-867E-477E-B705-91341BE99292](https://github.com/mirandatatiana/NewReactMovieApp/assets/76907106/257c7478-1d65-4aae-abdb-682b8974fa81)
+![D55DEC40-97C2-49AD-B294-B4EC8FE24990](https://github.com/mirandatatiana/NewReactMovieApp/assets/76907106/38f670be-fce4-426a-97d3-f989c2b25ebc)
 
-  <p align="center">
-    <br />
-    <br />
-    <br />
-    <a href="https://reacttailwindmovies.netlify.app/">View Demo</a>
-    🚀
-
-</div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project 💻</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
+ <a href="https://mirandatatiana.github.io/RickyandMorty/">View Demo</a>
+### About
 Build a responsive and interactive movie app that allows users to explore and search for movies, view movie details, and stay updated with the latest releases. The project will use React for the front-end development, Tailwind CSS for styling, and TMDb API for movie data.
 
 Key Features:
@@ -74,7 +33,7 @@ Implement React Router for navigation between movie lists and detail pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+### Technologies Used
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgments section. Here are a few examples.
 
@@ -83,42 +42,28 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Features
+- **Character Catalog**: Browse through an extensive catalog of characters from the Rick and Morty universe.
+- **Location Details**: Explore various locations featured in the series with detailed information.
 
+### How to Contribute
+1. Fork the repository.
+2. Clone the forked repository to your local machine.
+3. Make your enhancements or fixes.
+4. Create a pull request, detailing the changes you made.
 
-<!-- GETTING STARTED -->
-## Getting Started
+### Running Locally
+To run this project locally, simply clone the repository and open `index.html` in your preferred browser.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+```bash
+git clone https://github.com/your-username/rick-and-morty-explorer.git
+cd rick-and-morty-explorer
+```
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+### Live Demo
+Check out the live demo  <a href="https://mirandatatiana.github.io/RickyandMorty/">Here</a>
+ to see the project in action!
+ 
 <!-- CONTACT -->
 ## Contact
 LinkedIn: [Tatiana Miranda](https://www.linkedin.com/in/tatianayamila-miranda/) 
@@ -129,18 +74,13 @@ Project Link: [NewReactMovie](https://reacttailwindmovies.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+Happy coding! 🚀🛸
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
