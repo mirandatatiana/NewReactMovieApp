@@ -25,7 +25,7 @@
     <br />
     <br />
     <a href="https://reacttailwindmovies.netlify.app/">View Demo</a>
-    ·
+    🚀
 
 </div>
 
@@ -59,10 +59,10 @@ Key Features:
 Movie List Page:
 
 Display a list of popular or trending movies.
-Each movie card show the movie's title, poster, release date.
+Each movie card shows the movie's title, poster, and release date.
 Implement pagination to navigate through multiple pages of movie results.
 Fetch Data from TMDb API
-Implement React Router for navigation between movie list and detail pages.
+Implement React Router for navigation between movie lists and detail pages.
 
 
 Movie Detail Page:
@@ -70,13 +70,13 @@ Movie Detail Page:
 Clicking on a movie card navigates to a detail page.
 Display comprehensive information about the selected movie, including its synopsis.
 Fetch Data from TMDb API
-Implement React Router for navigation between movie list and detail pages.
+Implement React Router for navigation between movie lists and detail pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgments section. Here are a few examples.
 
 * [![React][React.js]][React-url]
 * [![Taildwindcss][Taildwindcss.com]][Taildwindcss-url]
