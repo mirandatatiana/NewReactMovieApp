@@ -121,8 +121,10 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [Tatiana Miranda](https://www.linkedin.com/in/tatianayamila-miranda/) - miranda.tatianayamila@gmail.com
+LinkedIn: [Tatiana Miranda](https://www.linkedin.com/in/tatianayamila-miranda/) 
+<br/>
+Email: miranda.tatianayamila@gmail.com
+<br/>
 Project Link: [NewReactMovie](https://reacttailwindmovies.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
