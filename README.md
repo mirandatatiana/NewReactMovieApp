@@ -34,7 +34,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">About The Project 💻</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -122,8 +122,8 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [Tatiana](https://www.linkedin.com/in/tatianayamila-miranda/) - miranda.tatianayamila@gmail.com
-Project Link: [NewReactMovie](https://github.com/mirandatatiana/NewReactMovieApp)
+Your Name - [Tatiana Miranda](https://www.linkedin.com/in/tatianayamila-miranda/) - miranda.tatianayamila@gmail.com
+Project Link: [NewReactMovie](https://reacttailwindmovies.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
