@@ -9,7 +9,7 @@ Welcome to the Movie Page project on GitHub! 🌌
 ![1DFE0E4F-867E-477E-B705-91341BE99292](https://github.com/mirandatatiana/NewReactMovieApp/assets/76907106/257c7478-1d65-4aae-abdb-682b8974fa81)
 ![D55DEC40-97C2-49AD-B294-B4EC8FE24990](https://github.com/mirandatatiana/NewReactMovieApp/assets/76907106/38f670be-fce4-426a-97d3-f989c2b25ebc)
 
- <a href="https://mirandatatiana.github.io/RickyandMorty/">View Demo</a>
+ <a href="(https://reacttailwindmovies.netlify.app/)">View Demo</a>
 ### About
 Build a responsive and interactive movie app that allows users to explore and search for movies, view movie details, and stay updated with the latest releases. The project will use React for the front-end development, Tailwind CSS for styling, and TMDb API for movie data.
 
